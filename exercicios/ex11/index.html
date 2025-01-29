@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <hr>
+    <p>Tente abrir esse site em diferentes dispositivos.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/img-small.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/img-media.png" type="image/png">
+        <img src="img/img-grande.png" alt="placeholder">
+    </picture>
+    <hr>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Teste de reprodução de áudios em HTML5</p>
+    <!--<audio src="media/mcvv-ins-enofim.mp3" controls autoplay></audio>-->
+    <!--Acima temos um codigo básico parar colocar audios, não é o mais adequado mas funciona-->
+    <audio preload="metadata" controls loop>
+        <source src="media/mcvv-ins-enofim.mp3" type="audio/mpeg">
+        <source src="media/mcvv-ins-enofim.ogg" type="audio/ogg">
+        <source src="media/mcvv-ins-enofim.wav" type="audio/wav"> <!--evite usar arquivos .wav, eles são muito pesados MDS-->
+        <p>Infelizmente seu navegador não conseguiu carregar o audio, caso queira baixar, <a href="media/mcvv-ins-enofim.mp3">Clique aqui</a>!</p>
+    </audio>
+</body>
+</html>

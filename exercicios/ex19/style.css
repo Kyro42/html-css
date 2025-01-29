@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*
+HTML é id     = # em CSS (Um elemento por pagina)
+HTML é class  = . em CSS (Vários elementos)
+*/
+
+body {
+    background-color: #8ac581;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #1e4918;
+}
+h1#pri {
+    text-align: center;
+    color: black;
+    background-color: #2D6424;
+} 
+h2 {
+    color: #2D6424;
+}
+.basic {
+    color: #2D6424;
+}
+.inter{
+    color: #67571D;
+}
+.advanced {
+    color: #67291D;
+}

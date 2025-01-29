@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <hr>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!--<video src="media/Mcvv-Inst-Enofim.webm" width="600" controls></video>-->
+    <!--A forma acima novamente não é a mais adequada por ser muito simples e não permitir a exibição em formatos diferentes-->
+    <video controls width="560" height="315">
+        <source src="media/mcvv-inst-enofim.mp4" type="video/mp4">
+        <source src="media/Mcvv-Inst-Enofim.m4v" type="video/mp4">
+        <source src="media/Mcvv-Inst-Enofim.webm" type="video/webm">
+        <p>Seu navegador nao conseguiu carregar o vídeo. Caso queira baixar o vídeo, <a href="media/mcvv-inst-enofim.mp4">clique aqui.</a></p>
+    </video>
+    <hr>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DsIVSCKi1z4?si=yOikP3p4ZUuRzrfz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <h1>Incorporando vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/273764697?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="238" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="2D Animation Reel"></iframe>
+</body>
+</html>

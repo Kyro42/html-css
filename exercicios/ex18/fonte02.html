@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Gang';
+            src: url('fonts/go3v2.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Japanese';
+            src: url('fonts/Japanese 3017.otf') format(opentype), url('fonts/Japanese 3017.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*
+            tipos de format
+            
+            opentype (otf)
+            truetype (ttf)
+            embedded-opentype ()
+            truetype-aat (Apple Advanced Typography)
+            svg ()
+        */
+        body {
+            font-family: 'Japanese', Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Gang', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil delectus maiores odio nesciunt sequi ab qui tempora id, nobis debitis a, assumenda eligendi quis consectetur iusto minus eum! Magnam, veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, alias, soluta quas et illo culpa aliquid, nisi libero ducimus hic perferendis doloribus? Necessitatibus accusantium eius nobis ex! Modi, quisquam ullam</p>
+</body>
+</html>
