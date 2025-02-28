@@ -55,6 +55,10 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 main section.normal {
     background-color: white;
     color: black;
@@ -63,12 +67,26 @@ main section.normal {
 main section.image {
     background-color: darkslategray;
     color: white;
+    box-shadow: inset 6px 10px 20px 0px rgba(0, 0, 0, 0.521);
+    background-attachment: fixed;
 }
 
 main section.image > p {
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.507);
     width: fit-content;
     padding: 5px;
+    text-shadow: -2px 1px 0px black;
+    background-size: cover;
+}
+
+section#img1 {
+    background-image: url(pacote/imagens/background001.jpg);
+    background-position: right, center;
+}
+
+section#img2 {
+    background-image: url(pacote/imagens/background002.jpg);
+    background-position: right, center;
 }
 
 footer {
