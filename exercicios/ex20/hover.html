@@ -11,17 +11,20 @@
         div {
             width: fit-content;
         }
-        div>p {
+        div p {
             display: none;
+            
         }
-        div:hover>p {
+        span:hover p {
             display: block;
             color: red;
             background-color: lightgrey;
-            width: 200px;
+            width: fit-content;
+
         }
-        div:hover {
+        span:hover {
             color: red;
+            width: fit-content;
         }
     </style>
 </head>
@@ -29,8 +32,10 @@
     <h1>Exemplo de hover</h1>
     <p>Passe o mouse sobre o texto abaixo:</p>
     <div>
-        Passe o mouse aqui
-        <p>HEHE, Eu estava escondido</p>
+        <span>Passe o mouse aqui
+            <p>HEHE, Eu estava escondido</p>
+            <p>alooo</p>
+        </span>
     </div>
 </body>
 </html>
