@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            border: 3px solid black;
+            width: 500px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: right;
+        }
+        .name{
+            text-align: left;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        th{
+            text-align: center;
+        }
+        .dark{
+            background-color: lightgray;
+        }
+        caption{
+            font-size: 1.3em;
+            background-color: darkgray;
+            border: 3px solid black;
+            font-weight: bold;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">
+                    Estado
+                </th>
+                <th scope="col" style="width: 150px;">
+                    População
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">
+                    São Paulo
+                </td>
+                <td>
+                    45 973 190
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Minas Gerais
+                </td>
+                <td>
+                    21 322 692	
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Rio de Janeiro
+                </td>
+                <td>
+                    17 219 679
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Bahia
+                </td>
+                <td>
+                    14 850 513	
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Paraná
+                </td>
+                <td>
+                    11 824 665	
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Rio Grande do Sul
+                </td>
+                <td>
+                    11 229 915
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Pernambuco
+                </td>
+                <td>
+                    9 539 029
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Ceará
+                </td>
+                <td>
+                    9 233 656	
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Pará
+                </td>
+                <td>
+                    8 664 306
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Santa Catarina
+                </td>
+                <td>
+                    8 058 447	
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Goiás
+                </td>
+                <td>
+                    7 350 483
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Maranhão
+                </td>
+                <td>
+                    7 010 960
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Amazonas
+                </td>
+                <td>
+                    4 281 209
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Paraíba
+                </td>
+                <td>
+                    4 145 040
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Espírito Santo
+                </td>
+                <td>
+                    4 102 129
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Mato Grosso
+                </td>
+                <td>
+                    3 836 399	
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Rio Grande do Norte
+                </td>
+                <td>
+                    3 446 071
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Piauí
+                </td>
+                <td>
+                    3 375 646	
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Alagoas
+                </td>
+                <td>
+                    3 220 104	
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Distrito Federal
+                </td>
+                <td>
+                    2 982 815
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Mato Grosso do Sul
+                </td>
+                <td>
+                    2 901 895
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Sergipe
+                </td>
+                <td>
+                    2 291 077	
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Rondônia
+                </td>
+                <td>
+                    1 746 227	
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Tocantins
+                </td>
+                <td>
+                    1 577 342	
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Acre
+                </td>
+                <td>
+                    880 631	
+                </td>
+            </tr>
+            <tr class="dark">
+                <td class="name">
+                    Amapá
+                </td>
+                <td>
+                    802 837	
+                </td>
+            </tr>
+            <tr>
+                <td class="name">
+                    Roraima
+                </td>
+                <td>
+                    716 793	
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">
+                    Total de habitantes
+                </th>
+                <td>
+                    <strong>
+                        212 583 720
+                    </strong>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
