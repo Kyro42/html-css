@@ -12,10 +12,11 @@
             border-collapse: collapse;
             border: 3px solid black;
             width: 500px;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
-            padding: 5px;
+            padding: 10px;
             text-align: right;
         }
         .name{
@@ -28,7 +29,7 @@
         th{
             text-align: center;
         }
-        .dark{
+        tbody > tr:nth-child(even){
             background-color: lightgray;
         }
         caption{
@@ -37,6 +38,11 @@
             border: 3px solid black;
             font-weight: bold;
             padding: 5px;
+        }
+        thead th{
+            position: sticky;
+            top: -2px;
+            background-color: gray;
         }
     </style>
 </head>
@@ -63,7 +69,7 @@
                     45 973 190
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Minas Gerais
                 </td>
@@ -79,7 +85,7 @@
                     17 219 679
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Bahia
                 </td>
@@ -95,7 +101,7 @@
                     11 824 665	
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Rio Grande do Sul
                 </td>
@@ -111,7 +117,7 @@
                     9 539 029
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Ceará
                 </td>
@@ -127,7 +133,7 @@
                     8 664 306
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Santa Catarina
                 </td>
@@ -143,7 +149,7 @@
                     7 350 483
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Maranhão
                 </td>
@@ -159,7 +165,7 @@
                     4 281 209
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Paraíba
                 </td>
@@ -175,7 +181,7 @@
                     4 102 129
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Mato Grosso
                 </td>
@@ -191,7 +197,7 @@
                     3 446 071
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Piauí
                 </td>
@@ -207,7 +213,7 @@
                     3 220 104	
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Distrito Federal
                 </td>
@@ -223,7 +229,7 @@
                     2 901 895
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Sergipe
                 </td>
@@ -239,7 +245,7 @@
                     1 746 227	
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Tocantins
                 </td>
@@ -255,7 +261,7 @@
                     880 631	
                 </td>
             </tr>
-            <tr class="dark">
+            <tr>
                 <td class="name">
                     Amapá
                 </td>
