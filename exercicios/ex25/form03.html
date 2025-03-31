@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iname">Name: </label>
+            <input type="text" name="name" id="iname" required maxlength="30" placeholder="Full name" autocomplete="name">
+        </p>
+        <p>
+            <label for="iavg">Average: </label>
+            <input type="number" name="avg" id="iavg" min="0" max="10" required placeholder="0-10" step="0.1">
+        </p>
+        <p>
+            <label for="imon">Month: </label>
+            <input type="month" name="mon" id="imon" value="2025-03">
+        </p>
+        <p>
+            <label for="iday">Day of the test: </label>
+            <input type="date" name="day" id="iday" value="2025-03-30">
+        </p>
+        <p>
+            <label for="ihou">Test hour: </label>
+            <input type="time" name="hou" id="ihou" value="12:00">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
