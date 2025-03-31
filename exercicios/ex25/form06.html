@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icol">Color: </label>
+                <input type="color" name="col" id="icol" value="#ff0000">
+        </p>
+        <p>
+            <label for="ivol">Volume: </label>
+                <input type="range" name="vol" id="ivol" min="1" max="5">
+        </p>
+        <p>
+            <label for="ipp">Profile Picture: </label>
+                <input type="file" name="pp" id="ipp">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
