@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="num1">Number 1: </label>
+            <input type="number" name="n1" id="num1" min="0" max="50" required oninput="isum.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="num2">Number 2: </label>
+            <input type="number" name="n2" id="num2" min="0" max="50" required oninput="isum.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="isum">Sum: </label>
+            <output id="isum">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
