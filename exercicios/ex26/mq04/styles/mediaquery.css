@@ -1,1 +1,68 @@
 @charset "UTF-8";
+
+/*Typical Device Breakpoints
+Phone: 0px - 600px
+Tablet: 601px - 1024px
+Laptops: 1025px - 1280px
+Desktops: 1281px - 1440px
+Tv: 1441px - ^
+*/
+
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main::after{
+        content: 'This print was made from www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+    #phone, #tablet, #pc, #tv {
+        display: none;
+    }
+    #print {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+    #phone, #print, #pc, #tv{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    body{
+        background-image: url(../images/back-pc.jpg);
+    }
+    #phone, #tablet, #print, #tv {
+        display: none;
+    }
+    #pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    body{
+        background-image: url(../images/back-tv.jpg);
+    }
+    #phone, #tablet, #print, #pc {
+        display: none;
+    }
+    #tv {
+        display: block;
+    }
+}
