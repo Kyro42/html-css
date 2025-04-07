@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu responsivo</title>
-    <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
 </head>
-<body>
+<body onresize="size()">
     <header>
         <h1>Meu site</h1>
         <span class="material-icons" id="ico" onclick="clickMenu()">menu</span>
@@ -32,6 +33,14 @@
         </article>
     </main>
     <script>
+        function size(){
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            }
+            else {
+                menu.style.display = 'none'
+            }
+        }
         function clickMenu() {
             if (menu.style.display == 'block') {
                 menu.style.display = 'none'
